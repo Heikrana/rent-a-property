@@ -1,10 +1,10 @@
-export default function Card({ house, key }) {
+export default function Card({ house, idx }) {
 	return (
-		<div className="flex flex-col items-center border border-solid rounded-md border-zinc-200">
+		<div className="flex flex-col items-center border border-solid border-zinc-200 bg-white rounded-md">
 			<img
 				src={house.image}
 				alt="image-of-house"
-				className="object-none w-[500px] h-[200px]"
+				className="object-none w-[500px] h-[200px] rounded-t-md"
 			/>
 			<div>
 				<div>
