@@ -9,7 +9,7 @@ export default function Searchbar() {
 	}
 
 	return (
-		<div className="border border-solid border-zinc-200 p-2 rounded-md text-xs">
+		<div className="border border-solid border-zinc-200 p-2 rounded-md text-xs sm:text-sm md:text-lg">
 			<form onSubmit={(e) => onFormSubmit(e)} className="flex">
 				<input
 					type="text"
