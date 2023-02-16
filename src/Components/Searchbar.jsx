@@ -9,7 +9,7 @@ export default function Searchbar() {
 	}
 
 	return (
-		<div className="border border-solid border-zinc-200 p-2 rounded-md">
+		<div className="border border-solid border-zinc-200 p-2 rounded-md text-xs">
 			<form onSubmit={(e) => onFormSubmit(e)} className="flex">
 				<input
 					type="text"
@@ -20,7 +20,7 @@ export default function Searchbar() {
 					}}
 					className="focus:outline-none"
 				/>
-				<div
+				{/* <div
 					className={`${
 						term ? "text-zinc-600" : "text-zinc-400"
 					} bg-zinc-100 rounded-full`}
@@ -39,7 +39,7 @@ export default function Searchbar() {
 							d="M19.5 8.25l-7.5 7.5-7.5-7.5"
 						/>
 					</svg>
-				</div>
+				</div> */}
 			</form>
 		</div>
 	);
