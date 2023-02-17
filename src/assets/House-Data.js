@@ -204,10 +204,10 @@ export const houses = [
 		},
 	},
 	{
-		image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+		image: "https://images.unsplash.com/photo-1583377519891-1eea1c2e3947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXBwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
 		data: {
-			price: "$2,095",
-			priceInCents: 209500,
+			price: "$987",
+			priceInCents: 98700,
 			location: "Palm Harbor",
 			address: {
 				state: "Florida",
@@ -221,10 +221,10 @@ export const houses = [
 		},
 	},
 	{
-		image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+		image: "https://images.unsplash.com/photo-1534159468957-f35ef72761d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFwcGFydG1lbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
 		data: {
-			price: "$2,700",
-			priceInCents: 270000,
+			price: "$785",
+			priceInCents: 78500,
 			location: "Beverly Springfield",
 			address: {
 				state: "Texas",
