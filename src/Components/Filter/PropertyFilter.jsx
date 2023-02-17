@@ -2,39 +2,35 @@ import { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { houses } from "../../assets/House-Data";
 
-export default function Location({ currLocation, setLocation }) {
+export default function PropertyFilter({ propertyType, setPropertyType }) {
 	const [isCollapsed, setCollapsed] = useState(true);
 
-	let uniqueStates = [
-		...new Set(
-			houses.map(
-				(house) =>
-					`${house.data.address.state}, ${house.data.address.country}`
-			)
-		),
+	let uniquePropertyTypes = [
+		...new Set(houses.map((house) => house.data.type)),
 	];
-	uniqueStates = [...uniqueStates, "All"];
+	uniquePropertyTypes = [...uniquePropertyTypes, "All"];
 
 	function updateLocation(e) {
-		setLocation(e.target.textContent);
+		setPropertyType(e.target.textContent);
 		setCollapsed(true);
 	}
 
-	const houseList = uniqueStates.map((location) => {
+	const properties = uniquePropertyTypes.map((type) => {
 		return (
 			<button onClick={updateLocation}>
-				<li>{location}</li>
+				<li>{type}</li>
 			</button>
 		);
 	});
 
 	return (
 		<div>
-			<p className="text-gray-600 text-sm sm:text-md">Location</p>
+			<p className="text-gray-600 text-sm sm:text-md">Property Type</p>
+
 			<OutsideClickHandler onOutsideClick={() => setCollapsed(true)}>
 				<div className="relative inline-block">
 					<button onClick={() => setCollapsed(!isCollapsed)}>
-						{currLocation}
+						{propertyType}
 					</button>
 					<div
 						id="myDropdown"
@@ -43,7 +39,7 @@ export default function Location({ currLocation, setLocation }) {
 						} absolute min-w-[230px] overflow-auto border border-solid bg-white`}
 					>
 						<ul className="flex flex-col items-start px-1 gap-1">
-							{houseList}
+							{properties}
 						</ul>
 					</div>
 				</div>

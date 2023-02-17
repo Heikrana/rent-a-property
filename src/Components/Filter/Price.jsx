@@ -1,9 +1,11 @@
 import { useState } from "react";
 
-export default function PriceFilter() {
-	const [minValue, setMin] = useState(0);
-	const [maxValue, setMax] = useState(10000);
-
+export default function PriceFilter({
+	minPrice,
+	setMinPrice,
+	maxPrice,
+	setMaxPrice,
+}) {
 	return (
 		<div>
 			<p className="text-gray-600 text-sm sm:text-md">Price</p>
@@ -12,9 +14,9 @@ export default function PriceFilter() {
 					<span className="ml-2">$</span>
 					<input
 						type="number"
-						value={minValue}
+						value={minPrice}
 						className="outline-none text-center w-10"
-						onChange={(e) => setMin(e.target.value)}
+						onChange={(e) => setMinPrice(e.target.value)}
 					/>
 				</div>
 				<span className="mx-2">-</span>
@@ -22,9 +24,9 @@ export default function PriceFilter() {
 					<span className="ml-2">$</span>
 					<input
 						type="number"
-						value={maxValue}
+						value={maxPrice}
 						className="outline-none text-center w-14"
-						onChange={(e) => setMax(e.target.value)}
+						onChange={(e) => setMaxPrice(e.target.value)}
 					/>
 				</div>
 			</div>
