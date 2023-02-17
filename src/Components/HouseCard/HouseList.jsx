@@ -1,8 +1,7 @@
 import Card from "./Card";
-import { houses } from "../../assets/House-Data";
 
-export default function HouseList() {
-	const items = houses.map((house, idx) => {
+export default function HouseList({ houseData }) {
+	const items = houseData.map((house, idx) => {
 		return <Card house={house} key={idx} />;
 	});
 

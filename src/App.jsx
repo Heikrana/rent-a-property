@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import HouseList from "./Components/HouseCard/HouseList";
 import SearchBar from "./Components/Searchbar";
 import Filter from "./Components/Filter/Filter";
+import { houses } from "./assets/House-Data";
 
 function App() {
+	const [houseData, setHouseData] = useState(houses);
+
+	console.log(houseData);
+
 	return (
 		<div className="bg-[#e3dff50f]">
 			<Navbar />
@@ -15,9 +21,9 @@ function App() {
 						</h1>
 						<SearchBar />
 					</div>
-					<Filter />
+					<Filter setHouseData={setHouseData} />
 				</div>
-				<HouseList />
+				<HouseList houseData={houseData} />
 			</main>
 		</div>
 	);
