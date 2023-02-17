@@ -13,6 +13,7 @@ export const houses = [
 			bedCount: 3,
 			bathroomCount: 2,
 			area: "5x7",
+			type: "house",
 		},
 	},
 	{
@@ -29,6 +30,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 2,
 			area: "6x7.5",
+			type: "house",
 		},
 	},
 	{
@@ -45,6 +47,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 3,
 			area: "8x10",
+			type: "house",
 		},
 	},
 	{
@@ -61,6 +64,7 @@ export const houses = [
 			bedCount: 3,
 			bathroomCount: 2,
 			area: "5x7",
+			type: "house",
 		},
 	},
 	{
@@ -77,6 +81,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 2,
 			area: "6x7.5",
+			type: "house",
 		},
 	},
 	{
@@ -93,6 +98,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 3,
 			area: "8x10",
+			type: "house",
 		},
 	},
 	{
@@ -109,6 +115,7 @@ export const houses = [
 			bedCount: 3,
 			bathroomCount: 2,
 			area: "5x7",
+			type: "house",
 		},
 	},
 	{
@@ -125,6 +132,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 2,
 			area: "6x7.5",
+			type: "house",
 		},
 	},
 	{
@@ -141,6 +149,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 3,
 			area: "8x10",
+			type: "house",
 		},
 	},
 	{
@@ -157,6 +166,7 @@ export const houses = [
 			bedCount: 3,
 			bathroomCount: 2,
 			area: "5x7",
+			type: "house",
 		},
 	},
 	{
@@ -173,6 +183,7 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 2,
 			area: "6x7.5",
+			type: "house",
 		},
 	},
 	{
@@ -189,6 +200,41 @@ export const houses = [
 			bedCount: 4,
 			bathroomCount: 3,
 			area: "8x10",
+			type: "house",
+		},
+	},
+	{
+		image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+		data: {
+			price: "$2,095",
+			priceInCents: 209500,
+			location: "Palm Harbor",
+			address: {
+				state: "Florida",
+				country: "USA",
+			},
+			fullAddress: "2699, Green Valley, Highland Lake, FL",
+			bedCount: 3,
+			bathroomCount: 2,
+			area: "5x7",
+			type: "appartment",
+		},
+	},
+	{
+		image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80",
+		data: {
+			price: "$2,700",
+			priceInCents: 270000,
+			location: "Beverly Springfield",
+			address: {
+				state: "Texas",
+				country: "USA",
+			},
+			fullAddress: "2821, Lake Sevilla, Palm Harbor, TX",
+			bedCount: 4,
+			bathroomCount: 2,
+			area: "6x7.5",
+			type: "appartment",
 		},
 	},
 ];

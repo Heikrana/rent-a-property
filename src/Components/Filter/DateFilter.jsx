@@ -3,7 +3,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-date-picker";
 
 export default function DateFilter() {
-	const [value, onChange] = useState(0);
+	const [value, onChange] = useState(new Date());
 	const [isCollapsed, setCollapsed] = useState(true);
 
 	return (

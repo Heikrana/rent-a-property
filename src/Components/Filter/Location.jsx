@@ -4,10 +4,17 @@ import { houses } from "../../assets/House-Data";
 export default function Location() {
 	const [isCollapsed, setCollapsed] = useState(true);
 
-	const houseList = houses.map((house) => {
-		return (
-			<li>{`${house.data.address.state}, ${house.data.address.country}`}</li>
-		);
+	const uniqueStates = [
+		...new Set(
+			houses.map(
+				(house) =>
+					`${house.data.address.state}, ${house.data.address.country}`
+			)
+		),
+	];
+
+	const houseList = uniqueStates.map((location) => {
+		return <li>{location}</li>;
 	});
 
 	return (

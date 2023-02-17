@@ -1,5 +1,6 @@
 import Location from "./Location";
 import DateFilter from "./DateFilter";
+import PropertyType from "./PropertyType";
 
 export default function Filter() {
 	return (
@@ -9,11 +10,7 @@ export default function Filter() {
 			<div>
 				<p className="text-gray-600 text-sm sm:text-md">Price</p>
 			</div>
-			<div>
-				<p className="text-gray-600 text-sm sm:text-md">
-					Property Type
-				</p>
-			</div>
+			<PropertyType />
 			<button className="text-white bg-indigo-500 py-1 px-4 md:py-3 md:px-8 rounded-md">
 				Search
 			</button>
