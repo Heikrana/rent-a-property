@@ -1,17 +1,16 @@
+import Location from "./Location";
+import DateFilter from "./DateFilter";
+
 export default function Filter() {
 	return (
 		<div className="flex justify-between mt-10 items-center px-3 py-2 md:px-7 md:py-5 border border-solid border-zinc-200 bg-white rounded-md">
+			<Location />
+			<DateFilter />
 			<div>
-				<p className="text-gray-600 text-sm sm:text-lg">Location</p>
+				<p className="text-gray-600 text-sm sm:text-md">Price</p>
 			</div>
 			<div>
-				<p className="text-gray-600 text-sm sm:text-lg">When</p>
-			</div>
-			<div>
-				<p className="text-gray-600 text-sm sm:text-lg">Price</p>
-			</div>
-			<div>
-				<p className="text-gray-600 text-sm sm:text-lg">
+				<p className="text-gray-600 text-sm sm:text-md">
 					Property Type
 				</p>
 			</div>

@@ -26,7 +26,7 @@ export default function Card({ house, idx }) {
 								{house.data.location}
 							</h3>
 							<p className="text-gray-400">
-								{house.data.address}
+								{house.data.fullAddress}
 							</p>
 						</div>
 					</div>
