@@ -2,6 +2,8 @@ import Dropdown from "./Dropdown";
 import { HiMailOpen } from "react-icons/hi";
 
 export default function Navbar() {
+	const itemsList = ["Item1", "Item2", "Item3", "Item4", "Item5"];
+
 	return (
 		<div className="flex justify-between px-10 py-6 border border-zinc-200 border-solid">
 			<div className="flex gap-10 items-center">
@@ -20,10 +22,13 @@ export default function Navbar() {
 						<a href="#">Sell</a>
 					</li>
 					<li className="px-5 py-1.5 flex">
-						<Dropdown value="Manage Property" />
+						<Dropdown
+							text="Manage Property"
+							itemsList={itemsList}
+						/>
 					</li>
 					<li className="px-5 py-1.5 flex">
-						<Dropdown value="Resources" />
+						<Dropdown text="Resources" itemsList={itemsList} />
 					</li>
 				</ul>
 			</div>
