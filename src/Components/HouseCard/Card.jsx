@@ -34,16 +34,20 @@ export default function Card({ house, idx }) {
 				</div>
 				<div className="flex gap-4 md:gap-8 pt-4 text-gray-400">
 					<p className="flex items-center gap-2">
-						<BiBed className="text-indigo-500 text-xl" />
-						<span>{house.data.bedCount} Beds</span>
+						<BiBed className="text-indigo-500 text-md sm:text-lg md:text-xl" />
+						<span className="text-sm">
+							{house.data.bedCount} Beds
+						</span>
 					</p>
 					<p className="flex items-center gap-2">
-						<BiBath className="text-indigo-500 text-xl" />
-						<span>{house.data.bathroomCount} Bathrooms</span>
+						<BiBath className="text-indigo-500 text-md sm:text-lg md:text-xl" />
+						<span className="text-sm">
+							{house.data.bathroomCount} Bathrooms
+						</span>
 					</p>
 					<p className="flex items-center gap-2">
-						<CgShapeRhombus className="text-indigo-500 text-xl" />
-						<span>
+						<CgShapeRhombus className="text-indigo-500 text-md sm:text-lg md:text-xl" />
+						<span className="text-sm">
 							{house.data.area} m<sup>2</sup>
 						</span>
 					</p>

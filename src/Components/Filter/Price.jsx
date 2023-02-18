@@ -13,9 +13,9 @@ export default function PriceFilter({
 		<div>
 			<p className="text-gray-600 text-sm sm:text-md">Price</p>
 			<OutsideClickHandler onOutsideClick={() => setCollapsed(true)}>
-				<div className="relative">
+				<div>
 					<div
-						className="price-input flex w-full"
+						className="price-input w-[4.5rem] text-sm lg:text-lg flex flex-col lg:flex-row lg:w-full"
 						onClick={() => setCollapsed(false)}
 					>
 						<div className="flex items-center border border-solid border-zinc-400 rounded-md px-2">
@@ -23,17 +23,20 @@ export default function PriceFilter({
 							<input
 								type="number"
 								value={minPrice}
-								className="outline-none text-center w-14"
+								className="outline-none text-center w-12 lg:w-16"
 								onChange={(e) => setMinPrice(e.target.value)}
 							/>
 						</div>
-						<span className="mx-2">-</span>
+						<span className="mx-2 hidden lg:inline">-</span>
+						<span className="mx-2 block text-center lg:hidden">
+							to
+						</span>
 						<div className="flex items-center border border-solid border-zinc-400 rounded-md px-2">
 							<span>$</span>
 							<input
 								type="number"
 								value={maxPrice}
-								className="outline-none text-center w-14"
+								className="outline-none text-center w-12 lg:w-16"
 								onChange={(e) => setMaxPrice(e.target.value)}
 							/>
 						</div>

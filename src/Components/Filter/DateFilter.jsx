@@ -18,7 +18,7 @@ export default function DateFilter({ date, setDate }) {
 				max="2023-12-31"
 				value={date}
 				onChange={(e) => setDate(e.target.value)}
-				// className={`${isDateChosen ? "block" : "hidden"}`}
+				className="outline-none"
 			/>
 		</div>
 	);

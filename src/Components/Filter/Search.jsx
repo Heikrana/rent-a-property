@@ -23,11 +23,13 @@ export default function Search({ searchProps, setHouseData }) {
 	}
 
 	return (
-		<button
-			className="text-white bg-indigo-500 py-1 px-4 md:py-3 md:px-8 rounded-md"
-			onClick={() => setHouseData(filterData())}
-		>
-			Search
-		</button>
+		<div className="col-span-2 self-center">
+			<button
+				className="text-white bg-indigo-500 py-1 px-4 md:py-3 md:px-8 rounded-md"
+				onClick={() => setHouseData(filterData())}
+			>
+				Search
+			</button>
+		</div>
 	);
 }

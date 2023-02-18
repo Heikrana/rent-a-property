@@ -5,7 +5,7 @@ import PropertyFilter from "./PropertyFilter";
 import PriceFilter from "./Price";
 import Search from "./Search";
 
-export default function Filter({ setHouseData }) {
+export default function Filters({ setHouseData }) {
 	const [currLocation, setLocation] = useState("All");
 	const [date, setDate] = useState("");
 	const [minPrice, setMinPrice] = useState(500);
@@ -21,7 +21,8 @@ export default function Filter({ setHouseData }) {
 	};
 
 	return (
-		<div className="flex justify-between mt-10 items-center px-3 py-2 md:px-7 md:py-5 border border-solid border-zinc-200 bg-white rounded-md">
+		// <div className="flex justify-between mt-10 items-center px-3 py-2 md:px-7 md:py-5 border border-solid border-zinc-200 bg-white rounded-md">
+		<div className="grid grid-cols-2 gap-y-4 items-center border border-solid border-zinc-200 bg-white rounded-md mb-4 lg:flex p-3 lg:mt-10 lg:px-7 lg:py-5 lg:justify-between ">
 			<Location currLocation={currLocation} setLocation={setLocation} />
 			<DateFilter date={date} setDate={setDate} />
 			<PriceFilter

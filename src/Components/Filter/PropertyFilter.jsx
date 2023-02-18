@@ -46,7 +46,7 @@ export default function PropertyFilter({ propertyType, setPropertyType }) {
 						id="myDropdown"
 						className={`${
 							isCollapsed ? "hidden" : "block"
-						} absolute min-w-[230px] overflow-auto border border-solid border-zinc-300 rounded-md bg-white drop-shadow-2xl`}
+						} absolute min-w-[120px] overflow-auto border border-solid border-zinc-300 rounded-md bg-white drop-shadow-2xl`}
 					>
 						<ul className="flex flex-col">{properties}</ul>
 					</div>
