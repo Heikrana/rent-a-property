@@ -9,10 +9,17 @@ export default function Search({ searchProps, setHouseData }) {
 
 	function filterData() {
 		const filteredData = houses.filter((house) => {
+			console.log(
+				currState,
+				currDate,
+				minPriceInCents,
+				maxPriceInCents,
+				propertyType
+			);
 			return (
 				(currState === "All" ||
 					house.data.address.state === currState) &&
-				house.data.availableDate <= currDate &&
+				(currDate === "" || house.data.availableDate <= currDate) &&
 				house.data.priceInCents >= minPriceInCents &&
 				house.data.priceInCents <= maxPriceInCents &&
 				(propertyType === "All" || house.data.type === propertyType)
