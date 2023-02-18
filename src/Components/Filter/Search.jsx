@@ -12,7 +12,7 @@ export default function Search({ searchProps, setHouseData }) {
 			return (
 				(currState === "All" ||
 					house.data.address.state === currState) &&
-				house.data.availableDate <= currDate.toJSON() &&
+				house.data.availableDate <= currDate &&
 				house.data.priceInCents >= minPriceInCents &&
 				house.data.priceInCents <= maxPriceInCents &&
 				(propertyType === "All" || house.data.type === propertyType)

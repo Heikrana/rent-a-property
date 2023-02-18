@@ -10,16 +10,18 @@ export default function PropertyFilter({ propertyType, setPropertyType }) {
 	];
 	uniquePropertyTypes = [...uniquePropertyTypes, "All"];
 
-	function updateLocation(e) {
+	function updateType(e) {
 		setPropertyType(e.target.textContent);
 		setCollapsed(true);
 	}
 
-	const properties = uniquePropertyTypes.map((type) => {
+	const properties = uniquePropertyTypes.map((type, idx) => {
 		return (
-			<button onClick={updateLocation}>
-				<li>{type}</li>
-			</button>
+			<div className="hover:bg-zinc-200 rounded-sm px-1" key={idx}>
+				<button onClick={updateType}>
+					<span>{type}</span>
+				</button>
+			</div>
 		);
 	});
 
@@ -36,11 +38,9 @@ export default function PropertyFilter({ propertyType, setPropertyType }) {
 						id="myDropdown"
 						className={`${
 							isCollapsed ? "hidden" : "block"
-						} absolute min-w-[230px] overflow-auto border border-solid bg-white`}
+						} absolute min-w-[230px] overflow-auto border border-solid border-zinc-300 rounded-md bg-white drop-shadow-2xl`}
 					>
-						<ul className="flex flex-col items-start px-1 gap-1">
-							{properties}
-						</ul>
+						<ul className="flex flex-col">{properties}</ul>
 					</div>
 				</div>
 			</OutsideClickHandler>

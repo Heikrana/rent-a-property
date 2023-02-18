@@ -7,7 +7,7 @@ import Search from "./Search";
 
 export default function Filter({ setHouseData }) {
 	const [currLocation, setLocation] = useState("All");
-	const [date, setDate] = useState(new Date());
+	const [date, setDate] = useState("");
 	const [minPrice, setMinPrice] = useState(0);
 	const [maxPrice, setMaxPrice] = useState(10000);
 	const [propertyType, setPropertyType] = useState("All");

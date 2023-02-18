@@ -20,11 +20,13 @@ export default function Location({ currLocation, setLocation }) {
 		setCollapsed(true);
 	}
 
-	const houseList = uniqueStates.map((location) => {
+	const houseList = uniqueStates.map((location, idx) => {
 		return (
-			<button onClick={updateLocation}>
-				<li>{location}</li>
-			</button>
+			<div className="hover:bg-zinc-200 rounded-sm px-1" key={idx}>
+				<button onClick={updateLocation}>
+					<span>{location}</span>
+				</button>
+			</div>
 		);
 	});
 
@@ -40,11 +42,9 @@ export default function Location({ currLocation, setLocation }) {
 						id="myDropdown"
 						className={`${
 							isCollapsed ? "hidden" : "block"
-						} absolute min-w-[230px] overflow-auto border border-solid bg-white`}
+						} absolute min-w-[230px] overflow-auto border border-solid border-zinc-300 rounded-md bg-white drop-shadow-2xl`}
 					>
-						<ul className="flex flex-col items-start px-1 gap-1">
-							{houseList}
-						</ul>
+						<div className="flex flex-col">{houseList}</div>
 					</div>
 				</div>
 			</OutsideClickHandler>

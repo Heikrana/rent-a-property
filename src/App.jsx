@@ -8,8 +8,6 @@ import { houses } from "./assets/House-Data";
 function App() {
 	const [houseData, setHouseData] = useState(houses);
 
-	console.log(houseData);
-
 	return (
 		<div className="bg-[#e3dff50f]">
 			<Navbar />

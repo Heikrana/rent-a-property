@@ -15,7 +15,7 @@ export const houses = [
 			area: "5x7",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -34,7 +34,7 @@ export const houses = [
 			area: "6x7.5",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -53,7 +53,7 @@ export const houses = [
 			area: "8x10",
 			type: "House",
 			availability: true,
-			availableDate: "2023-01-17T00:00:00.000Z",
+			availableDate: "2023-01-17",
 		},
 	},
 	{
@@ -72,7 +72,7 @@ export const houses = [
 			area: "5x7",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -91,7 +91,7 @@ export const houses = [
 			area: "6x7.5",
 			type: "House",
 			availability: true,
-			availableDate: "2023-05-17T00:00:00.000Z",
+			availableDate: "2023-05-17",
 		},
 	},
 	{
@@ -110,7 +110,7 @@ export const houses = [
 			area: "8x10",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -129,7 +129,7 @@ export const houses = [
 			area: "5x7",
 			type: "House",
 			availability: true,
-			availableDate: "2022-07-17T00:00:00.000Z",
+			availableDate: "2022-07-17",
 		},
 	},
 	{
@@ -148,7 +148,7 @@ export const houses = [
 			area: "6x7.5",
 			type: "House",
 			availability: true,
-			availableDate: "2022-09-17T00:00:00.000Z",
+			availableDate: "2022-09-17",
 		},
 	},
 	{
@@ -167,7 +167,7 @@ export const houses = [
 			area: "8x10",
 			type: "House",
 			availability: true,
-			availableDate: "2022-10-17T00:00:00.000Z",
+			availableDate: "2022-10-17",
 		},
 	},
 	{
@@ -186,7 +186,7 @@ export const houses = [
 			area: "5x7",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -205,7 +205,7 @@ export const houses = [
 			area: "6x7.5",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -224,7 +224,7 @@ export const houses = [
 			area: "8x10",
 			type: "House",
 			availability: true,
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 	{
@@ -242,7 +242,7 @@ export const houses = [
 			bathroomCount: 2,
 			area: "5x7",
 			type: "Appartment",
-			availableDate: "2023-01-01T00:00:00.000Z",
+			availableDate: "2023-01-01",
 		},
 	},
 	{
@@ -260,7 +260,7 @@ export const houses = [
 			bathroomCount: 2,
 			area: "6x7.5",
 			type: "Appartment",
-			availableDate: "2023-02-17T00:00:00.000Z",
+			availableDate: "2023-02-17",
 		},
 	},
 ];
