@@ -1,5 +1,4 @@
 import { useState } from "react";
-import DatePicker from "react-date-picker";
 
 export default function DateFilter({ date, setDate }) {
 	const [isDateChosen, setIsDateChose] = useState(false);

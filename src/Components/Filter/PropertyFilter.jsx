@@ -1,6 +1,7 @@
 import { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import { houses } from "../../assets/House-Data";
+import { IoChevronDownCircleSharp } from "react-icons/io5";
 
 export default function PropertyFilter({ propertyType, setPropertyType }) {
 	const [isCollapsed, setCollapsed] = useState(true);
@@ -17,7 +18,10 @@ export default function PropertyFilter({ propertyType, setPropertyType }) {
 
 	const properties = uniquePropertyTypes.map((type, idx) => {
 		return (
-			<div className="hover:bg-zinc-200 rounded-sm px-1" key={idx}>
+			<div
+				className="hover:bg-indigo-500 hover:text-white rounded-sm px-1"
+				key={idx}
+			>
 				<button onClick={updateType}>
 					<span>{type}</span>
 				</button>
@@ -31,8 +35,12 @@ export default function PropertyFilter({ propertyType, setPropertyType }) {
 
 			<OutsideClickHandler onOutsideClick={() => setCollapsed(true)}>
 				<div className="relative inline-block">
-					<button onClick={() => setCollapsed(!isCollapsed)}>
+					<button
+						onClick={() => setCollapsed(!isCollapsed)}
+						className="flex items-center gap-4"
+					>
 						{propertyType}
+						<IoChevronDownCircleSharp className="text-indigo-500" />
 					</button>
 					<div
 						id="myDropdown"
